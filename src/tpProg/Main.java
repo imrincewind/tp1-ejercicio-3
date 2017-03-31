@@ -6,24 +6,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		Pila pila = new Pila();
-		String s = "hola";
-		String a = "hola2";
-		String b = "hola3";
-		String c = "hola4";
+		String s = "TOPE:";
 		
-		pila.apilar(s);
-		pila.apilar(a);
-		pila.apilar(b);
-		pila.apilar(c);
-		ArrayList<String> array = new ArrayList();
+		for(int i = 1; i <= 3000; i++){
+			pila.apilar(s + " " + i);
+		}
+		
+		for(int i = 1; i <= 3000; i++){		
 		System.out.println(pila.tope());
 		pila.desapilar();
-		System.out.println(pila.tope());
-		pila.desapilar();
-		System.out.println(pila.tope());
-		pila.desapilar();
-		System.out.println(pila.tope());
-		pila.desapilar();
+		}
+		
 		
 
 	}
